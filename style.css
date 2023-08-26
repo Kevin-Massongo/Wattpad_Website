@@ -3,10 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-header{
-    background-color: rgb(247, 247, 247);
-    border: 0.1px solid transparent;
-}
+
 header .container{
     display: flex;
     justify-content: space-between;
@@ -15,6 +12,8 @@ header .container{
     max-width: 1600px;
     margin: auto;
     padding: 12px;
+    background-color: rgb(247, 247, 247);
+    border: 0.1px solid transparent;
 }
 
 header .container .boxOne{
@@ -27,6 +26,10 @@ header .container .boxOne{
     height: 27px;
     width: 100%;
     object-fit: cover;
+}
+
+.logoSmall{
+    display: none;
 }
 
 .boxOne .nav{
@@ -55,7 +58,7 @@ header .container .boxOne{
     color: black;
 }
 
-/* ------------------------------------------------------- */
+/* -------------------------------------------------------  */
 
 .boxTwo .nav{
     display: flex;
@@ -65,7 +68,7 @@ header .container .boxOne{
     margin-right: 30px;
 }
 
-a{
+.container .nav li a{
     text-decoration: none;
     font-size: 0.9rem;
     font-family: 'Open sans', sans-serif;
@@ -73,11 +76,11 @@ a{
     color: black;
 }
 
-li{
+.container .nav li{
     list-style: none;
 }
 
-.try{
+.container .nav .try{
     background-color: rebeccapurple; 
     padding: 10px;
     color: white;
@@ -91,4 +94,150 @@ li{
     /* font-size: 1.2rem; */
     margin: -10px 10px 0px 10px;
 
+}
+
+.user{
+    height: 30px;
+    width: 30px;
+    background-color: gray;
+    color: white;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ----------------------------------------------BROWSER PART------------------------------------------------- */
+
+.menuBrowser{
+    position: absolute;
+    left: 8rem;
+    background-color: white;
+    width: 500px;
+    border: 1px solid brown;
+}
+
+.menuBrowser .containerBrowser{
+    display: flex;
+}
+
+.menuBrowser .containerBrowser li{
+    list-style: none;   
+    padding: 5px;
+}
+
+
+/* -----------------------------------------------RESPONSIVE--------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+    .container .nav li a{
+        font-size: 1rem;
+    }
+
+    .container .nav .search, .spanSearch{
+        margin-left: -20px;
+    }
+    .container .nav .communauty, .write, .try{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container .nav li a{
+        font-size: 0.9rem;
+    }
+
+    .container  img{
+        width: 30px;
+    }
+
+    .container .nav .search{
+        position: relative;
+        left: 10rem;
+    }
+
+    .container .nav .search, .spanSearch{
+        margin-left: -20px;
+    }
+    .container .nav .communauty, .write, .try, .login, .signup, .spanSearch{
+        display: none;
+    }
+    .user{
+        display: flex;
+    }
+    .logo{
+        display: none;
+    }  
+    .logoSmall{
+        display: flex;
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    .container .nav li a{
+        font-size: 0.8rem;
+    }
+
+    .container  img{
+        width: 25px;
+    }
+
+    .container .nav .search{
+        position: relative;
+        left: 8rem;
+    }
+
+    .container .nav .search, .spanSearch{
+        margin-left: -20px;
+    }
+    .container .nav .communauty, .write, .try, .login, .signup, .spanSearch{
+        display: none;
+    }
+    .user{
+        display: flex;
+    }
+    .logo{
+        display: none;
+    }  
+    .logoSmall{
+        display: flex;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    .container .nav li a{
+        font-size: 0.8rem;
+    }
+
+    .browse{
+        margin-left: 20px;
+    }
+
+    .container  img{
+        width: 25px;
+    }
+
+    .container .nav .search{
+        position: relative;
+        left: 8rem;
+        margin-left: -60px;
+
+    }
+    .container .nav .communauty, .write, .try, .login, .signup, .spanSearch{
+        display: none;
+    }
+    .user{
+        display: flex;
+        margin-left: -50px;
+    }
+    .logo{
+        display: none;
+    }  
+    .logoSmall{
+        display: flex;
+    }
+    
 }
