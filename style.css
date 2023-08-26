@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open sans', sans-serif;
 }
 
 header .container{
@@ -111,22 +112,75 @@ header .container .boxOne{
 /* ----------------------------------------------BROWSER PART------------------------------------------------- */
 
 .menuBrowser{
-    position: absolute;
-    left: 8rem;
+    display: flex;
+    justify-content: center;
+    max-width: 60%;
     background-color: white;
-    width: 500px;
-    border: 1px solid brown;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 5rem;
+    top: 10%;
+    overflow: hidden;
+    height: 0;
 }
 
-.menuBrowser .containerBrowser{
+.menuBrowser.open{
+    height: 400px;
+}
+
+
+.menuBrowser .oneBrowser .containerBrowser{
     display: flex;
+    justify-content: center;
 }
 
 .menuBrowser .containerBrowser li{
     list-style: none;   
     padding: 5px;
 }
+.menuBrowser .containerBrowser li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
 
+
+.menuBrowser .oneBrowser .containerBrowser .navTwo{
+    margin-left: 2rem;
+}
+
+.menuBrowser .oneBrowser .containerBrowser .navThree{
+    margin-left: 2rem;
+}
+
+.menuBrowser .oneBrowser{
+    margin-left: 3rem;
+    padding: 1rem;
+}
+
+.menuBrowser .oneBrowser .browserText{
+    font-weight: bold;
+    margin: 0 0 1rem 0.5rem;
+    font-size: 1rem;
+}
+
+.menuBrowser .twoBrowser {
+    margin-left: 3rem;
+    background-color: rgb(218, 218, 218);
+    padding: 1rem;
+}
+
+
+.menuBrowser .twoBrowser .browserText{
+    font-weight: bold;
+    margin: 0 0 1rem 0.4rem;
+    font-size: 1rem;
+}
+
+.menuBrowser li:hover{
+    scale: 1.02;
+    transition: 0.2s linear;
+}
 
 /* -----------------------------------------------RESPONSIVE--------------------------------------------- */
 
