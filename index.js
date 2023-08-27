@@ -15,3 +15,12 @@ openCommunity.addEventListener('click', addCommunity)
 function addCommunity(){
     menuCommunity.classList.toggle('open')
 }
+    
+const openWrite = document.querySelector('.write')
+const menuWrite = document.querySelector('.menuWrite')
+
+openWrite.addEventListener('click', addWrite)
+
+function addWrite(){
+    menuWrite.classList.toggle('open')
+}

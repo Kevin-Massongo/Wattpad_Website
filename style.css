@@ -215,6 +215,55 @@ header .container .boxOne{
     font-size: 1rem;
 }
 
+.menuCommunity .nav li a:hover{
+    border-bottom: 1px solid black;
+}
+
+/* -------------------------------------------------WRITE PART------------------------------------------- */
+
+.menuWrite{
+    display: flex;
+    justify-content: center;
+    max-width: 43%;
+    background-color: white;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    height: 0;
+    overflow: hidden;
+}
+
+.menuWrite.open{
+    height: 230px;
+}
+
+.menuWrite .nav{
+    padding: 1rem 0.5rem;
+}
+
+.menuWrite .br{
+    position: absolute;
+    width: 90%;
+    border: 1px solid rgb(209, 208, 208);
+}
+.menuWrite .nav li{
+    list-style: none;   
+    padding: 5px;
+}
+.menuWrite .nav li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.menuWrite .nav li a:hover{
+    border-bottom: 1px solid black;
+}
+
+.menuWrite .book{
+    font-size: 2rem;
+}
 /* -----------------------------------------------RESPONSIVE--------------------------------------------- */
 
 @media screen and (max-width: 768px) {
