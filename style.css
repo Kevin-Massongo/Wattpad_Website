@@ -278,6 +278,18 @@ header .container .boxOne{
     .container .nav .community, .write, .try{
         display: none;
     }
+    .menuBrowser{
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        background-color: white;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+        position: absolute;
+        left: 0;
+        top: 10%;
+        overflow: hidden;
+        height: 0;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -294,10 +306,10 @@ header .container .boxOne{
         left: 10rem;
     }
 
-    .container .nav .search, .spanSearch{
+    .container .nav .search{
         margin-left: -20px;
     }
-    .container .nav .community, .write, .try, .login, .signup, .spanSearch{
+    .container .nav .community, .write, .try, .login, .signup{
         display: none;
     }
     .user{
